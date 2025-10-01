@@ -111,12 +111,36 @@
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-center mb-12 text-gray-900">My Projects</h1>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Template 1 -->
+
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="thumbnail_final.png" alt="A placeholder image for a project" class="w-full h-48 object-cover object-[0%_20%]">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-2">pfSense firewall as my router<h2>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    I replaced my home router with a virtualized pfSense on Proxmox, so I can controll
+                                    my network
+                                </p>
+
+                                <a href="https://github.com/Janosik8/pfSense-as-my-router-" target="_blank"
+                                    class="inline-block bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                                    View Project
+                                </a>
+                        <a href="https://youtu.be/XMvGP2p5xaQ?si=D9dUV61dbRCdnYXw"
+                            target="_blank"
+                            class="inline-block bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                            Watch the full video
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Project Template 0 -->
                 <div
                     class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <img src="remote.gif" alt="A placeholder image for a project" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h2 class="text-2xl font-bold mb-2">Online-Gate-Remote<h2>
+                        <h2 class="text-2xl font-bold mb-2">Online Gate Remote<h2>
                                 <p class="text-gray-600 text-sm mb-4">
                                     I turned a physical gate remote into an online site allowing me to open the gate
                                     with my phone!
@@ -149,7 +173,8 @@
                     </div>
                 </div>
 
-                <!-- Project Template 3 -->
+
+                <!-- Project Template 4 -->
                 <!-- <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <img src="https://placehold.co/600x400/292524/fff?text=Project+Image+3" alt="A placeholder image for a project" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -164,12 +189,13 @@
                 </div> -->
 
 
+
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-   <footer class="w-full bg-white shadow-md py-4 text-center mt-auto">
+    <footer class="w-full bg-white shadow-md py-4 text-center mt-auto">
         <p class="text-gray-600">© <span id="current-year"></span> Jan Ogiegło</p>
     </footer>
 
@@ -182,7 +208,7 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-         // Update the current year in the footer
+        // Update the current year in the footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
